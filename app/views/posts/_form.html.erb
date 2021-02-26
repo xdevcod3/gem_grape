@@ -1,0 +1,97 @@
+<%= form_with(model: post) do |form| %>
+  <% if post.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(post.errors.count, "error") %> prohibited this post from being saved:</h2>
+
+      <ul>
+        <% post.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :username %>
+    <%= form.text_field :username %>
+  </div>
+
+  <div class="field">
+    <%= form.label :password %>
+    <%= form.text_field :password %>
+  </div>
+
+  <div class="field">
+    <%= form.label :nom %>
+    <%= form.text_field :nom %>
+  </div>
+
+  <div class="field">
+    <%= form.label :prenom %>
+    <%= form.text_field :prenom %>
+  </div>
+
+  <div class="field">
+    <%= form.label :nationalite %>
+    <%= form.text_field :nationalite %>
+  </div>
+
+  <div class="field">
+    <%= form.label :dateN %>
+    <%= form.text_field :dateN %>
+  </div>
+
+  <div class="field">
+    <%= form.label :epouse %>
+    <%= form.text_field :epouse %>
+  </div>
+
+  <div class="field">
+    <%= form.label :enfants %>
+    <%= form.text_area :enfants %>
+  </div>
+
+  <div class="field">
+    <%= form.label :expresident %>
+    <%= form.text_field :expresident %>
+  </div>
+
+  <div class="field">
+    <%= form.label :bio %>
+    <%= form.text_area :bio %>
+  </div>
+
+  <div class="field">
+    <%= form.label :partie %>
+    <%= form.text_field :partie %>
+  </div>
+
+  <div class="field">
+    <%= form.label :sexe %>
+    <%= form.text_field :sexe %>
+  </div>
+
+  <div class="field">
+    <%= form.label :dateF %>
+    <%= form.text_field :dateF %>
+  </div>
+
+  <div class="field">
+    <%= form.label :dateC %>
+    <%= form.text_field :dateC %>
+  </div>
+
+  <div class="field">
+    <%= form.label :age %>
+    <%= form.number_field :age %>
+  </div>
+
+  <div class="field">
+    <%= form.label :expP %>
+    <%= form.text_area :expP %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>
