@@ -1,4 +1,4 @@
-A backend application with fields and an admin panel which provides data using an API.
+A backend application using ruby '2.6.2' and 'rails', '~> 6.1.3' with fields and an admin panel which provides data using an API.
 
 #Run it 
   git clone 
@@ -13,7 +13,3 @@ A backend application with fields and an admin panel which provides data using a
     Admin account:
       email: presiadmin@gmail.com
       pwd:  presiAdmin
-  
-
-
-
