@@ -1,24 +1,19 @@
-# README
+A backend application with fields and an admin panel which provides data using an API.
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+#Run it 
+  git clone 
+    cd PresApi/
+      bundle update && bundle 
+        rails db:migrate
+          rails db:seed
+            rails s
+  
+  
+#After you going to this url  (localhost:3000)
+    Admin account:
+      email: presiadmin@gmail.com
+      pwd:  presiAdmin
+  
 
-Things you may want to cover:
 
-* Ruby version
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
